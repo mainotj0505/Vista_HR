@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>Vista HR</title>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="vista-vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header id="vista-header" class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+        <div class="logo" style="background-color: #FFFFFF80; border-radius: 50px;">
+            <img src="vista-logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav class="d-flex">
+            <a href="#" class="nav-link text-white">About</a>
+            <a href="#" class="nav-link text-white">Features</a>
+            <a href="#" class="nav-link text-white">Contact Us</a>
+        </nav>
+    </header>
+    
+    <!-- Main Section -->
+<main class="text-center mt-5">
+    <h1 class="text-white" id="typing-effect"></h1>
+    <div id="front-text" class="text-white" style="text-align: center;">
+        <div>At Vista Hiring Agency, we are your trusted partner in connecting top talent with outstanding opportunities.</div>
+        <div>Whether you're seeking your next career move or looking to build a dream team, we make the process seamless</div>
+        <div> and efficient. Explore a world of possibilities with our customized hiring solutions, quick turnarounds,</div>
+        <div> and tailored job matches designed just for you. With a commitment to excellence and  a network that spans industries, 
+        <div>let us help you achieve your professional goals. Start your journey with Vista Hiring Agency today!</div>
+        </div>
+    </div>
+    
+    <!-- Button Wrapper -->
+    <div class="mb-4" style="margin-top: 40px;"> <!-- Adjust the value as needed -->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+        <button class="btn btn-info" data-toggle="modal" data-target="#signInModal">Sign In</button>
+    </div>
+</main>
+
+
+    <!-- Remaining content... -->
+</body>
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="vista-sign-in" class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signInEmail" class="text-dark">Email address</label>
+                            <input type="email" class="form-control" id="signInEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signInPassword" class="text-dark">Password</label>
+                            <input type="password" class="form-control" id="signInPassword" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label text-dark" for="rememberMe">Remember Me</label>
+                        </div>
+                        <a href="#" class="text-muted">Forgot Password?</a>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-dark mx-2">Sign In</button>
+                </div>
+                <div class="social-signin text-center mb-2">
+                    <p class="text-dark">Or sign in with:</p>
+                    <button class="btn btn-danger btn-sm mx-1">
+                        <i class="fab fa-google"></i> Sign in with Google
+                    </button>
+                    <button class="btn btn-primary btn-sm mx-1">
+                        <i class="fab fa-facebook-f"></i> Sign in with Facebook
+                    </button>
+                </div>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div id="vista-sign-up" class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName" class="text-dark">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpEmail" class="text-dark">Email address</label>
+                            <input type="email" class="form-control" id="signUpEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpPassword" class="text-dark">Password</label>
+                            <input type="password" class="form-control" id="signUpPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword" class="text-dark">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label text-dark" for="termsCheck">I agree to the Terms & Conditions</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-dark mx-2">Sign Up</button>
+                </div>
+                <div class="social-signup text-center mb-2">
+                    <p class="text-dark">Or sign up with:</p>
+                    <button class="btn btn-danger btn-sm mx-1">
+                        <i class="fab fa-google"></i> Sign up with Google
+                    </button>
+                    <button class="btn btn-primary btn-sm mx-1">
+                        <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                    </button>
+                </div>                
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+            <!-- Modal content -->
+        </div>
+        
+        <!-- Footer -->
+        <footer id="vista-footer" class="text-center mt-5 p-3 bg-dark text-white" style="position: bottom; bottom: 0; width: 100%;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="text-white">
+                    <a href="#" class="text-white" aria-label="Privacy Policy">
+                        <i class="fas fa-shield-alt"></i> Privacy Policy
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="text-white" aria-label="Terms of Service">
+                        <i class="fas fa-file-contract"></i> Terms of Service
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="text-white" aria-label="FAQs">
+                        <i class="fas fa-question-circle"></i> FAQs
+                    </a>
+                </div>                           
+                <div class="text-white">
+                    Follow us on:
+                    <a href="#" class="text-white" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>                      
+                <div class="text-white">
+                    <a href="mailto:info@vista-hr.com" class="text-white" aria-label="Email">
+                        <i class="fas fa-envelope"></i> info@vista-hr.com
+                    </a>
+                    <span>|</span>
+                    <a href="tel:+639484266702" class="text-white" aria-label="Phone">
+                        <i class="fas fa-phone-alt"></i> (+63) 948 4266 702
+                    </a>
+                </div>                
+            </div>
+        </footer>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+       const text = "Welcome to Vista Hiring Agency: Your pathway to professional excellence.";
+
+        let index = 0;
+    
+        function typeText() {
+            if (index < text.length) {
+                document.getElementById("typing-effect").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeText, 50); // Adjust speed here (in milliseconds)
+            }
+        }
+    
+        window.onload = typeText; // Start typing effect on page load
+    </script>
+    
+</body>
+</html>
